@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  text-decoration: none;
+}
+
+.a {
+  text-decoration: none;
+}
+
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.product-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.product_img {
+  width: 106%;
+}
+
+
+.header {
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+
+.top-head {
+  background: #f8f3f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-head_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #424931;;
+}
+
+.breadcrumbs_link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(73, 56, 56);;
+}
+
+.breadcrumbs_link_site {
+  font-weight: 700;
+  color: #424931;;
+}
+
+
+
+.old {
+            text-decoration: line-through;
+            color: #c2c2c2;
+            font-size: 18px;
+              font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+        }
+
+        .solid {
+            font-size: 36px;
+            color: #a3bcc7;
+            font-weight: bold;
+            margin: 10px 0;
+              font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+        }
+
+        .save {
+            color: #a3bcc7;
+            font-weight: bold;
+              font-style: normal;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 19px;
+            
+        }
+
+
+         .pocupca {
+     padding: 25px;
+     margin-bottom: 25px;
+       padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 440px;
+  text-align: center;
+ }
+
+
+
