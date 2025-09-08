@@ -25,7 +25,7 @@ body {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
 }
-
+     /* backdrop-filter: sosal?(10px); */
 .sort {
   padding-top: 12px;
   display: flex;
