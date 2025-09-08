@@ -1,37 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Silksong Shop</title>
+    <link rel="stylesheet" href="kak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header center">
         <div class="header_left">
-            <a href="index.html" class="logo"><img src="lup.svg" alt="" width="110" height="49"></a>
-          <a href="index.html" class="logo"><img src="b696ee5dd2d5275e7780fe0c5fb1891c.svg" alt="" width="110" height="49"></a>
-               </div>
-,
-
+            <a href="index.html" class="logo">
+                <svg width="130" height="49" viewBox="0 0 130 49">
+                    <rect width="130" height="49" fill="#222"/>
+                    <text x="10" y="30" font-family="Lato" font-size="20" fill="white">SILKSONG</text>
+                </svg>
+            </a>
+        </div>
+        <div class="header_right">
+            <label for="burger" class="burger-label">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </label>
+            <input id="burger" type="checkbox">
+            <nav class="nav">
+                <ul>
+                    <li><a href="SAA.html">Caйк</a></li>
+                    <li><a href="ssaa.html">Шкибиди туалет</a></li>
+                    <li><a href="https://dzen.ru/video/watch/63fd25f442bde33eeb63571a?share_to=link">Кто я</a></li>
+                    <li><a href="https://gnomoslog.github.io/shop/">Сайт</a></li>
+                </ul>
+            </nav>
+        </div> 
     </header>
+    
     <div class="top-head center">
         <h2 class="top-head_heading">Silksong</h2>
         <nav class="breadcrumbs">
             <a href="#" class="breadcrumbs_link">ВЫШЕЛ</a>
-            <a href="#" class="breadcrumbs_link_site">ПОРА ИГРАТЬ </a> 
+            <span class="breadcrumbs_separator">/</span>
+            <a href="#" class="breadcrumbs_link_site">ПОРА ИГРАТЬ</a> 
+            <span class="breadcrumbs_separator">/</span>
             <a href="#" class="breadcrumbs_link_site">Ура!!!!!!!!!!!!!!!!💀</a>
         </nav>
     </div>
-    <div class="product-box center">
-        <div class="product">
-            <img class="product_img" src="Без имени-1.png" alt="product">
-            <div class="pocupca">
-                <a href="хз" class="old">💀Men men 💀</a>
-                <p class="solid">480 Femoев 💀</p>
-                <p class="save">💀Скидка 21%💀</p>
+    
+    <div class="filter-sort center">
+        <details class="filter">
+            <summary class="filter_summary">
+                <span class="filter_heading">FILTER</span> 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 17H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </summary>
+            <div class="filter_content">
+                <details open class="filter_item">
+                    <summary class="filter_head">CATEGORY</summary>
+                    <div class="filter_link-box">
+                        <a href="#" class="filter_link">Access</a>
+                        <a href="#" class="filter_link">Bags</a>
+                        <a href="#" class="filter_link">Decorations</a>
+                        <a href="#" class="filter_link">Gadgets</a>
+                        <a href="#" class="filter_link">Hoodies</a>
+                        <a href="#" class="filter_link">T-shirts</a>
+                    </div>
+                </details>
+                <details class="filter_item">
+                    <summary class="filter_head">BRAND</summary>
+                    <div class="filter_link-box"><a href="#" class="filter_link">Team Cherry</a>
+                        <a href="#" class="filter_link">Fangamer</a>
+                        <a href="#" class="filter_link">Hollow Knight</a>
+                        <a href="#" class="filter_link">Silksong</a>
+                    </div>
+                </details>
+                <details class="filter_item">
+                    <summary class="filter_head">DESIGNER</summary>
+                    <div class="filter_link-box">
+                        <a href="#" class="filter_link">Ari Gibson</a>
+                        <a href="#" class="filter_link">William Pellen</a>
+                        <a href="#" class="filter_link">Team Cherry</a>
+                    </div>
+                </details>
+            </div>
+        </details>
+        
+        <div class="sort">
+            <details class="sort_details">
+                <summary class="sort_summary">
+                    <span class="sort_heading">TRENDING NOW</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M18 13L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M6 13L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </summary>
+                <div class="sort_box">
+                    <a href="#" class="filter_link">Most Popular</a>
+                    <a href="#" class="filter_link">New Arrivals</a>
+                    <a href="#" class="filter_link">Best Sellers</a>
+                </div>
+            </details>
+            
+            <details class="sort_details">
+                <summary class="sort_summary">
+                    <span class="sort_heading">SIZE</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M18 13L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M6 13L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </summary>
+                <div class="sort_box">
+                    <div class="sort_check">
+                        <input id="sort_check1" type="checkbox">
+                        <label for="sort_check1">XS</label>
+                    </div>
+                    <div class="sort_check">
+                        <input id="sort_check2" type="checkbox">
+                        <label for="sort_check2">S</label>
+                    </div>
+                    <div class="sort_check">
+                        <input id="sort_check3" type="checkbox">
+                        <label for="sort_check3">M</label>
+                    </div>
+                    <div class="sort_check">
+                        <input id="sort_check4" type="checkbox">
+                        <label for="sort_check4">L</label>
+                    </div>
+                </div>
+            </details>
+            
+            <details class="sort_details">
+                <summary class="sort_summary">
+                    <span class="sort_heading">PRICE</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M18 13L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M6 13L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                </summary>
+                <div class="sort_box">
+                    <a href="#" class="filter_link">Low to High</a>
+                    <a href="#" class="filter_link">High to Low</a>
+                </div>
+            </details>
+        </div>
+    </div>
+    
+    <div class="products-container center">
+        <div class="product-box">
+            <div class="product">
+                <img class="product_img" src="xorn.jpg" alt="Silksong Game">
+                <div class="pocupca">
+                    <a href="#" class="old">💀Men men 💀</a>
+                    <p class="solid">480 Femoев 💀</p>
+                    <p class="save">💀Скидка 21%💀</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-box">
+            <div class="product">
+                <img class="product_img" src="ada.jpg">
+                    <a href="#" class="old">💀Men men 💀</a>
+                    <p class="solid">480 Femoев 💀</p>
+                    <p class="save">💀Скидка 21%💀</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-box">
+            <div class="product">
+                <img class="product_img" src="i (5).webp" alt="Silksong Collector's Edition">
+                <div class="pocupca">
+                    <a href="#" class="old">💀Men men 💀</a>
+                    <p class="solid">480 Femoев 💀</p>
+                    <p class="save">💀Скидка 21%💀</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- не мае но прикольно же -->
+    <script>
+      
+        document.addEventListener('click', function(event) {
+            const filters = document.querySelectorAll('details');
+            filters.forEach(filter => {
+                if (!filter.contains(event.target)) {
+                    filter.removeAttribute('open');
+                }
+            });
+        });
+        
+
+        document.querySelectorAll('.filter, .sort_details').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
 </body>
 </html>
