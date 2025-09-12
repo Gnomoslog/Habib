@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    counter-reset: count;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #c0c9cf 0%, #a7afb8 50%, #2f3235 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.counte-info {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.counte-info::before {
+    content: "Сбито уток: " counter(count);
+}
+
+
+.duck {
+    position: absolute;
+}
+
+.duck__img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.duck__img:hover {
+    transform: scale(1.1);
+}
+
+
+.duck-check {
+    position: absolute;
+    visibility: hidden;
+    left: -9999px;
+}
+
+.duck-check:checked {
+    counter-increment: count;
+}
+
+.duck-check:checked ~ label {
+    display: none;
+}
+
+
+@keyframes duck-fly-1 {
+  0% {
+    left: -100px;
+    top: 63vh;
+  }
+  50% {
+    left: 48vw;
+    top: 65vh;
+  }
+  100% {
+    left: 100vw;
+    top: 90vh;
+  }
+}
+
+@keyframes duck-fly-2 {
+  0% {
+    left: -100px;
+    top: 66vh;
+  }
+  50% {
+    left: 27vw;
+    top: 62vh;
+  }
+  100% {
+    left: 100vw;
+    top: 44vh;
+  }
+}
+
+@keyframes duck-fly-3 {
+  0% {
+    left: -100px;
+    top: 72vh;
+  }
+  50% {
+    left: 47vw;
+    top: 44vh;
+  }
+  100% {
+    left: 100vw;
+    top: 41vh;
+  }
+}
+
+@keyframes duck-fly-4 {
+  0% {
+    left: -100px;
+    top: 64vh;
+  }
+  50% {
+    left: 12vw;
+    top: 59vh;
+  }
+  100% {
+    left: 100vw;
+    top: 23vh;
+  }
+}
+
+@keyframes duck-fly-5 {
+  0% {
+    left: -100px;
+    top: 74vh;
+  }
+  50% {
+    left: 12vw;
+    top: 69vh;
+  }
+  100% {
+    left: 100vw;
+    top: 33vh;
+  }
+}
+
+@keyframes duck-fly-6 {
+  0% {
+    left: -100px;
+    top: 74vh;
+  }
+  50% {
+    left: 22vw;
+    top: 89vh;
+  }
+  100% {
+    left: 100vw;
+    top: 43vh;
+  }
+}
+
+
+.duck_1 {
+    animation: duck-fly-1 5s ease-in 1s both;
+}
+
+.duck_2 {
+    animation: duck-fly-2 5s ease-in 2s both;
+}
+
+.duck_3 {
+    animation: duck-fly-3 5s ease-in 3s both;
+}
+
+.duck_4 {
+    animation: duck-fly-4 5s ease-in 4s both;
+}
+
+.duck_5 {
+    animation: duck-fly-5 5s ease-in 5s both;
+}
+
+.duck_6 {
+    animation: duck-fly-6 5s ease-in 6s both;
+}
+
+
+.instructions {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 100;
+    font-size: 21px;
+}
+
